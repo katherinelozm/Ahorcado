@@ -31,7 +31,7 @@ int main(){
 	char** hangman;
 	do{
 		cout << endl << endl << "AHORCADO" << endl << endl;
-		randword = rand() % 4;
+		randword = rand() % 19;
 		wordguessed = new char[50];
 		word = new char[50];
 		strcpy(word, words[randword]);
