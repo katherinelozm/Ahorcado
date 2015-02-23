@@ -241,14 +241,14 @@ void hangmanprint(char** hangman, int rows, int columns, int wrongs){
 
 void read(char** words){
 	int cont = 0;
-	ifstream myReadFile;
-	 myReadFile.open("diccionario.txt");
-	 if (myReadFile.is_open()) {
-		 while (!myReadFile.eof()) {
-		    myReadFile >> words[cont];
+	ifstream diccfile;
+	diccfile.open("diccionario.txt");
+	if (diccfile.is_open()) {
+		while (!diccfile.eof()) {
+			diccfile >> words[cont];
 		    cont++;
 		}
 	}
-	myReadFile.close();
+	diccfile.close();
 }
 
